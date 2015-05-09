@@ -11,7 +11,5 @@
   "hubot-shipit",
   "hubot-youtube",
   "hubot-diagnostics",
-  "hubot-redis-brain",
-  "hubot-scripts",
-  "hubot-slack"
+  "hubot-redis-brain"
 ]
