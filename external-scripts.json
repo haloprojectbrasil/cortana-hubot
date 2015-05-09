@@ -13,5 +13,6 @@
   "hubot-youtube",
   "hubot-diagnostics",
   "hubot-redis-brain",
-  "hubot-calculator"
+  "hubot-calculator",
+  "hubot-factoids"
 ]
