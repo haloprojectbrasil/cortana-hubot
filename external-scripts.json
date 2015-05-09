@@ -9,9 +9,11 @@
   "hubot-redis-brain",
   "hubot-rules",
   "hubot-seen",
+  "hubot-sentimental",
   "hubot-shipit",
   "hubot-youtube",
   "hubot-diagnostics",
   "hubot-redis-brain",
-  "hubot-calculator"
+  "hubot-calculator",
+  "hubot-factoids"
 ]
