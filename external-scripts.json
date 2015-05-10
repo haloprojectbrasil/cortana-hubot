@@ -12,5 +12,6 @@
   "hubot-shipit",
   "hubot-youtube",
   "hubot-calculator",
-  "hubot-factoids"
+  "hubot-factoids",
+  "hubot-group-alias",
 ]
