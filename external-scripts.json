@@ -11,8 +11,6 @@
   "hubot-seen",
   "hubot-shipit",
   "hubot-youtube",
-  "hubot-diagnostics",
-  "hubot-redis-brain",
   "hubot-calculator",
   "hubot-factoids"
 ]
