@@ -17,8 +17,28 @@
 #   Germano Corrêa <germanobruscato@gmail.com>
 
 module.exports = (robot) ->
-    palavroes=['porra','merda','caralho','buceta','fdp','filho da puta','fuder','fudeu','fuck']
-    replies=['Your mother did not give you education?','Master Chief wouldn\'t be proud of you','Living with this Neanderthals, how they expect me to not come into rampancy?']
+    palavroes=[
+      'porra',
+      'merda',
+      'caralho',
+      'buceta',
+      'fdp',
+      'filho da puta',
+      'fuder',
+      'fude',
+      'fudeu',
+      'fuck',
+      'fudê',
+      'puta',
+      'bosta',
+      'cu',
+      'piroca'
+    ]
+    replies=[
+      'Your mother did not give you education?',
+      'Master Chief wouldn\'t be proud of you'
+      ,'Living with these Neanderthals, how they expect me to not come into rampancy?'
+    ]
     for badword in palavroes
       robot.hear badword, (res) ->
           res.send res.random replies

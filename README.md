@@ -68,14 +68,11 @@ Para usar um pacote, cheque a sua documentação, mas no geral é assim:
 1. Use `npm install --save`  para adicionar o pacote em `package.json` e instalá-lo;
 2. Adicione o nome do pacote em `external-scripts.json` como uma string de aspas duplas.
 
-You can review `external-scripts.json` to see what is included by default.
+Você pode revisar o arquivo `external-scripts.json` para ver o que já é incluido por padrão.
 
-##### Advanced Usage
+##### Uso Avançado
 
-It is also possible to define `external-scripts.json` as an object to
-explicitly specify which scripts from a package should be included. The example
-below, for example, will only activate two of the six available scripts inside
-the `hubot-fun` plugin, but all four of those in `hubot-auto-deploy`.
+Também é possível definir `external-scripts.json` como um objeto para específicar explicitamente que scripts de um pacote devem ser incluídos. O exemplo abaixo, por exemplo, apenas ativará dois de seis scripts disponíveis dentro do plugin `hubot-fun`, mas também todos os quatro em `hubot-auto-deploy`.
 
 ```json
 {
@@ -84,11 +81,10 @@ the `hubot-fun` plugin, but all four of those in `hubot-auto-deploy`.
     "thanks"
   ],
   "hubot-auto-deploy": "*"
-}
-```
+}```
+``
 
-**Be aware that not all plugins support this usage and will typically fallback
-to including all scripts.**
+**Esteja avisado de que nem todos plugins suportam esse uso, e geralmente irão falhar ao incluir todos os scripts.**
 
 [npmjs]: https://www.npmjs.com
 
