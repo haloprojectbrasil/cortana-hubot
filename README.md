@@ -81,7 +81,8 @@ Também é possível definir `external-scripts.json` como um objeto para especí
     "thanks"
   ],
   "hubot-auto-deploy": "*"
-}```
+}
+```
 
 **Esteja avisado de que nem todos plugins suportam esse uso, e geralmente irão falhar ao incluir todos os scripts.**
 
