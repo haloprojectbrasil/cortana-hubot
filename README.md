@@ -90,37 +90,27 @@ Também é possível definir `external-scripts.json` como um objeto para especí
 
 ### hubot-scripts
 
-Before hubot plugin packages were adopted, most plugins were held in the
-[hubot-scripts][hubot-scripts] package. Some of these plugins have yet to be
-migrated to their own packages. They can still be used but the setup is a bit
-different.
+Antes dos pacotes de plugins do hubot serem adotados, a maioria dos plugins eram guardados no pacote
+[hubot-scripts][hubot-scripts]. Alguns desses plugins tiveram que migrar para seus próprios pacotes. Eles ainda podem ser usados, mas a configuração é um pouco diferente.
 
-To enable scripts from the hubot-scripts package, add the script name with
-extension as a double quoted string to the `hubot-scripts.json` file in this
-repo.
+Para permitir scripts do pacote hubot-scripts, adicione o nome do script com sua extenção como uma string de aspas duplas no arquivo `hubot-scripts.json` deste repositório.
 
 [hubot-scripts]: https://github.com/github/hubot-scripts
 
-##  Persistence
+##  Persistência
 
-If you are going to use the `hubot-redis-brain` package (strongly suggested),
-you will need to add the Redis to Go addon on Heroku which requires a verified
-account or you can create an account at [Redis to Go][redistogo] and manually
-set the `REDISTOGO_URL` variable.
+Se você irá usar o pacote `hubot-redis-brain` (fortemente recomendável), você irá precisar adicionar o addon Redit to Go no Heroku, que requer uma conta verificada, ou criar uma conta no [Redis to Go][redistogo] e manualmente configurar a variável `REDISTOGO_URL`.
 
     % heroku config:add REDISTOGO_URL="..."
 
-If you don't need any persistence feel free to remove the `hubot-redis-brain`
-from `external-scripts.json` and you don't need to worry about redis at all.
+Se você não precisar de nenhuma persistência sinta-se livre para remover `hubot-redis-brain`
+do arquivo `external-scripts.json` e não precisará se preocupar com redis de forma alguma.
 
 [redistogo]: https://redistogo.com/
 
-## Adapters
+## Adapters (adpatadores)
 
-Adapters are the interface to the service you want your hubot to run on, such
-as Campfire or IRC. There are a number of third party adapters that the
-community have contributed. Check [Hubot Adapters][hubot-adapters] for the
-available ones.
+Adapters são a interface para o serviço que você quer que o hubot execute, como o Campfire, IRC ou Slack. Há vários adapters de terceiros com os quais a comunidade contribui. Cheque [Hubot Adapters][hubot-adapters] para ver os disponíveis.
 
 If you would like to run a non-Campfire or shell adapter you will need to add
 the adapter package as a dependency to the `package.json` file in the
