@@ -112,9 +112,7 @@ do arquivo `external-scripts.json` e não precisará se preocupar com redis de f
 
 Adapters são a interface para o serviço que você quer que o hubot execute, como o Campfire, IRC ou Slack. Há vários adapters de terceiros com os quais a comunidade contribui. Cheque [Hubot Adapters][hubot-adapters] para ver os disponíveis.
 
-If you would like to run a non-Campfire or shell adapter you will need to add
-the adapter package as a dependency to the `package.json` file in the
-`dependencies` section.
+Se você quiser executar um adapter que não é do Campfire, ou da shell, você precisará adicionar o pacote do adaptador como uma dependência no arquivo `package.json` na seção `dependencies`.
 
 Once you've added the dependency with `npm install --save` to install it you
 can then run hubot with the adapter.
