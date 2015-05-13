@@ -32,12 +32,14 @@ module.exports = (robot) ->
       'puta',
       'bosta',
       'cu',
-      'piroca'
+      'piroca',
+      'cú'
     ]
     replies=[
       'Your mother did not give you education?',
       'Master Chief wouldn\'t be proud of you'
-      ,'Living with these Neanderthals, how they expect me to not come into rampancy?'
+      ,'Living with these Neanderthals, how they expect me to not come into rampancy?',
+      'If you keep saying this I\'ll have to clean your mouth with soap.'
     ]
     for badword in palavroes
       robot.hear badword, (res) ->
