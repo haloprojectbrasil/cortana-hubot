@@ -41,6 +41,8 @@ module.exports = (robot) ->
       ,'Living with these Neanderthals, how they expect me to not come into rampancy?',
       'If you keep saying this I\'ll have to clean your mouth with soap.'
     ]
-    for badword in palavroes
-      robot.hear badword, (res) ->
+    robot.hear /(.*)/i, (res) ->
+      badwordSaid=res.match[1]
+      for badword in palavroes
+        if badword.toUpperCase() is badwordSaid.toUpperCase()
           res.send res.random replies
