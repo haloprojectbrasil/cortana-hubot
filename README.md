@@ -1,5 +1,5 @@
 # cortana-hubot
-
+[![Heroku](https://heroku-badge.herokuapp.com/?app=cortana-hubot-slack)]
 Para a HPB se divertir e ter uma ajuda no [Slack][slack], o bot **cortana** foi criado. Ele é um bot de chat construído no framework [Hubot][hubot]. Foi inicialmente gerado pelo [generator-hubot][generator-hubot], e configurado para ser lançado no [Heroku][heroku] para ser usado o mais fácil e cedo possível.
 
 Este README se destina a ajudar você a começar. Atualizar e melhorar o bot, como usar, implantar e atualizar, suas funcionalidades, etc!
